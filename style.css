@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+}
+body{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+
+#head{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#head::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+#head_content{
+    position: absolute;
+}
+
+#head_content h1{
+    color: #fff;
+    font-size: 2.8rem;
+    text-shadow: 2xp 2px 2px #000;
+}
+#head_content h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-shadow: 2xp 2px 2px #000;
+}
+#head_content a{
+    color: #fff;
+    padding: 3px 20px 3px 20px;
+    border: 1px solid orange;
+    background: rgb(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+}
+#head_content a:hover{
+    background: navy;
+}
+/* ------------------------------------- */
+/* Header section */
+#header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height:  70px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.5);
+}
+#navbar h1{
+    color: orange;
+    font-size:  1.8rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family: cursive;
+}
+#navbar ol{
+    display: flex;
+}
+#navbar ol li{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+}
+#navbar ol li:hover{
+    background: navy;
+    cursor: pointer;
+}
+#navbar ol li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+#con{
+    color: #fff;
+    margin-left: 500px;
+
+}
+#phone a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 3px 15px 3px 15px;
+    border: 1px solid orange;
+}
+
+/* Menu section */
+#menu{
+    padding: 25px 0 25px 0;
+}
+#section{
+    padding: 25px 0 25px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: verdana;
+}
+#menu_row{
+    display: flex;
+    padding: 0 100px 0  100px;
+}
+#menu_col{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px  solid #bbb;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+#menu_col h2{
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+}
+#image{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    padding:5px;
+    border: 2px solid orange;
+}
+#image img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+footer{
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.contact-info, .contact-form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+form button:hover {
+    background-color: #45a049;
+}
+.contact-info h2, .contact-info p {
+    color: #333; /* Dark gray color for the text */
+}
+
+#phone {
+    color: #333; /* Dark gray for the Contact Us and phone text */
+}
+#mobile_menu{
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    background-color: magenta ;
+} 
+ #mobile_menu ol{
+    display: flex;
+    justify-content: center;
+} 
+#mobile_menu ul li{
+    list-style: none;
+    padding: 0 5px 0 5px;
+} 
+#mobile_menu ul li a{
+    text-decoration: none;
+    color: black;
+
+} 
+@media screen and (max-width: 768px) {
+    #mobile_menu{
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+    html{
+        font-size: 95%;
+    }
+    #menu_row{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+}
+@media screen and (max-width: 360px){
+    html{
+        font-size: 70%;
+    }
+} 
+
+
